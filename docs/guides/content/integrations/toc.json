@@ -4,7 +4,6 @@
     "pages": {
         "youtubesetup": "YouTube Setup",
         "discordintegrationsetup": "Discord Integration Setup",
-        "blueskyintegration": "Bluesky Integration Setup",
         "twitchembeds": "Enable Twitch Embeds",
         "tipeeestream": "TipeeeStream Alerts",
         "streamelements": "StreamElements Alerts",

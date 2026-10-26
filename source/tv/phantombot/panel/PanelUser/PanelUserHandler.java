@@ -31,7 +31,6 @@ import org.json.JSONStringer;
 import com.mcawful.CustomPanelManifestRegistry;
 import com.mcawful.PanelPasskeyHandler;
 import com.mcawful.PanelSessionManager;
-import com.mcawful.social.SocialPlatformRegistry;
 
 import tv.phantombot.PhantomBot;
 import tv.phantombot.panel.WsPanelHandler;
@@ -204,10 +203,7 @@ public final class PanelUserHandler {
                     "welcome_disabled_users",
                     "donations",
                     "tipeeestreamhandler",
-                    "streamelementshandler",
-                    "bluesky",
-                    "bluesky_mapping",
-                    "bluesky_user_last_repost")),
+                    "streamelementshandler")),
             Map.entry("audio", List.of(
                     "audiocommands",
                     "audio_hooks")),
@@ -1193,7 +1189,7 @@ public final class PanelUserHandler {
             return true;
         }
         script = script.toLowerCase();
-        if (script.equalsIgnoreCase("donationscache.java") || script.equalsIgnoreCase(SocialPlatformRegistry.PANEL_SCRIPT)) {
+        if (script.equalsIgnoreCase("donationscache.java")) {
             com.gmt2001.Console.err
                     .println("Script access denied to script " + script + " for user " + user.getUsername());
             return false;
