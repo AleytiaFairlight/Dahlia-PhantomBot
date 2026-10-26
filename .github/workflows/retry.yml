@@ -2,7 +2,7 @@ name: Auto-Retry Failed Jobs
 
 on:
   workflow_run:
-    workflows: ["Java CI", "Build JLink Binaries", "Build/Upload Release", "CodeQL", "On Push Actions"]
+    workflows: ["Java CI", "Build JLink Binaries", "Build/Upload Release", "CodeQL"]
     types: [completed]
 
 jobs:
